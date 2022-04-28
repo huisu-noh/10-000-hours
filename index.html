@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.scss" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <script defer src="main.js"></script>
+    <title>10,000 hours rule</title>
+  </head>
+  <body>
+    <div class="content">
+      <h1>1만 시간의 법칙</h1>
+      <span>"연습은 어제의 당신보다 당신을 더 낫게 만든다."</span>
+      <div class="rule">
+        <span class="quotes">"</span>
+        <span
+          ><span class="blod">1만 시간의 법칙</span> 은<br />
+          어떤 분야의 전문가가 되기 위해서는 <br />최소한 1만 시간의 훈련이
+          필요하다는 법칙이다.</span
+        >
+        <span class="quotes">"</span>
+      </div>
+      <div class="inputs">
+        나는
+        <input id="input-text" type="text" placeholder="예)프로그래밍" />
+        전문가가 될 것이다. <br />그래서 앞으로 매일 하루에
+        <input id="input-number" type="number" placeholder="예)5" /> 시간 씩
+        훈련 할 것이다.
+      </div>
+      <div>
+        <input
+          class="btn"
+          id="submit-btn"
+          type="button"
+          value="나는 며칠 동안 훈련을 해야 1만 시간이 될까 ?"
+          onClick="onSubmitClick()"
+        />
+        <span class="material-symbols-outlined"> saved_search </span>
+      </div>
+      <div class="result">
+        <img
+          class="img"
+          src="http://paullab.co.kr/images/10000hours/loading.png"
+          alt="loading"
+        />
+        <div class="output">
+          당신은<span id="output-text"></span> 전문가가 되기 위해서 <br />
+          대략 <span id="output-number"></span> 일 이상 훈련 하셔야 합니다! :)
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
