@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&family=Noto+Sans+KR:wght@400;500;700&display=swap');
+
+// font-size
+$lage: 100px;
+$medium: 70px;
+$small: 30px;
+$box-sizing: border-box;
+
+// color
+$white: #fff;
+$yellow: #f5df4d;
+
+body {
+  background-color: #5b2386;
+  padding-top: 50px;
+  font-family: 'jua';
+  box-sizing: $box-sizing;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h1 {
+    font-size: $medium;
+    text-shadow: 5px -3px 2px $yellow;
+  }
+  span {
+    font-size: $small;
+    margin: 30px 0;
+    color: $yellow;
+    text-align: center;
+  }
+  .rule {
+    display: flex;
+    span {
+      color: $white;
+    }
+  }
+  .inputs {
+    font-size: $small;
+    color: $white;
+    input {
+      margin-top: 10px;
+      font-family: 'jua';
+      padding: 10px;
+      font-size: $small;
+      border-radius: 10px;
+    }
+  }
+}
+
+.btn {
+  font-size: 25px;
+  font-weight: 800;
+  color: #5b2386;
+  background-color: $yellow;
+  font-family: 'jua';
+  border-radius: 25px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.result {
+  font-size: $small;
+  color: $white;
+  .img {
+    margin: 20px auto;
+    display: none;
+    animation: rotate_image 10s ease infinite;
+    transform-origin: 50% 50%;
+    transition-duration: 3s;
+  }
+  @keyframes rotate_image {
+    100% {
+      transform: rotate(720deg);
+    }
+  }
+  .output {
+    display: none;
+    #output-text {
+      font-size: $medium;
+      padding-left: 15px;
+    }
+    #output-number {
+      font-size: $medium;
+    }
+  }
+}
