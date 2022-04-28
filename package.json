@@ -1,0 +1,25 @@
+{
+  "name": "10-000-hours",
+  "version": "1.0.0",
+  "description": "Clone coding",
+  "main": "main.js",
+  "scripts": {
+    "dev": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/huisu-noh/10-000-hours.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/huisu-noh/10-000-hours/issues"
+  },
+  "homepage": "https://github.com/huisu-noh/10-000-hours#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5",
+    "sass": "^1.50.1"
+  }
+}
